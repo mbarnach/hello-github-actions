@@ -1,0 +1,10 @@
+jobs:
+  build:
+    name: A workflow for my Hello World file
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: ./action-a
+      env:
+        MY_NAME: "Mona"
+on: push
